@@ -16,6 +16,8 @@
 //  limitations under the License.
 //
 
-public protocol NetworkStackDelegate: class {
+import Foundation
+
+public protocol NetworkStackDelegate: AnyObject {
   func networkStack(_ networkStack: NetworkStack, didReceiveResponse response: HTTPURLResponse, forRequest request: URLRequest)
 }
